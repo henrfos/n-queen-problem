@@ -1,5 +1,3 @@
-# oppgave 2
-
 COLUMNS = "abcde"
 NUM_QUEENS = len(COLUMNS)
 ACCEPT = 1
@@ -65,67 +63,6 @@ result1 = is_solution(candidate_solution1)
 result2 = is_solution(candidate_solution2)
 print("Candidate Solution 1:", result1)
 print("Candidate Solution 2:", result2)
-
-
-# oppgave 3
-
-
-class Graph:
-    graph = dict()
-
-    def add_edge(self, node, neighbour):
-        if node not in self.graph:
-            self.graph[node] = [neighbour]
-        else:
-            self.graph[node].append(neighbour)
-
-    def print_graph(self):
-        print(self.graph)
-
-    def print_edges(self):
-        for node in self.graph:
-            for neighbour in self.graph[node]:
-                print("(", node, ",", neighbour, ")")
-
-    def find_cycle(self, node):
-        searched = [node]
-        search_queue = [node]
-        n_list = []
-
-        while search_queue:
-            node = search_queue.pop(0)
-
-            print("[", node, end= "],")
-
-            if node in self.graph:
-                for neighbour in self.graph[node]:
-                    if neighbour not in searched:
-                        searched.append(neighbour)
-                        search_queue.append(neighbour)
-
-
-        if len(searched) >= 9:
-            print("\nCycle found!")
-        else:
-            print("\nCycle not found!")
-
-my_graph = Graph()
-
-my_graph.add_edge("A", "B")
-my_graph.add_edge("B", "D")
-my_graph.add_edge("C", "B")
-my_graph.add_edge("C", "J")
-my_graph.add_edge("D", "E")
-my_graph.add_edge("D", "F")
-my_graph.add_edge("E", "C")
-my_graph.add_edge("E", "G")
-my_graph.add_edge("F", "H")
-my_graph.add_edge("G", "I")
-
-my_graph.print_graph()
-c = my_graph.find_cycle("A")
-
-print(c)
 
 
 
