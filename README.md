@@ -1,4 +1,4 @@
-Problem:
+#Problem:
 Extend the implementation of the solver for the N-queen problem by adding a new function
 called is_solution() that receives as a parameter a candidate solution and checks if the
 solution is valid (correct) or not. The candidate solution is in the form of a list of string,
