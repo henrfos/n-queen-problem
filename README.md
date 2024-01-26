@@ -32,13 +32,19 @@ def extend(partial_sol):...
 def is_solution(candidate_solution):...
 
 candidate_solution1 = ['d3', 'c1', 'e5', 'b4', 'a2']
+
 candidate_solution2 = ['e4', 'a1', 'c5', 'd2', 'b1']
 
 result1 = is_solution(candidate_solution1)
+
 result2 = is_solution(candidate_solution2)
 
 print("Candidate Solution 1:", result1)
+
 print("Candidate Solution 2:", result2)
+
 [Output]:
+
 Candidate Solution 1: Valid!
+
 Candidate Solution 2: Invalid!
