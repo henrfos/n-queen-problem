@@ -18,6 +18,7 @@ CONTINUE = 2
 
 ABANDON = 3
 
+
 all_solutions = []
 
 def solve(partial_sol):...
