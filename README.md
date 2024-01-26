@@ -7,12 +7,19 @@ indicating the position of the queens in the chessboard.
 You can assume N=5.
 You can change other functions if needed. Here is an example output for two candidate
 solutions.
+
 COLUMNS = "abcde"
+
 NUM_QUEENS = len(COLUMNS)
+
 ACCEPT = 1
+
 CONTINUE = 2
+
 ABANDON = 3
+
 all_solutions = []
+
 def solve(partial_sol):...
 
 def examine(partial_sol):...
